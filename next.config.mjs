@@ -4,11 +4,11 @@ const nextConfig = {
     return [
       {
         source: "/url/:path*",
-        destination: "http://localhost:8000/url/:path*", // Adjust the port to match your Express server
+        destination: "https://url-shortening-frontend-five.vercel.app/url/:path*", // Adjust the port to match your Express server
       },
       {
         source: "/:shortid",
-        destination: "http://localhost:8000/:shortid", // Adjust the port to match your Express server
+        destination: "https://url-shortening-frontend-five.vercel.app/:shortid", // Adjust the port to match your Express server
       },
     ];
   },
