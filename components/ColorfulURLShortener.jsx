@@ -96,7 +96,7 @@ export default function ColorfulURLShortener() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
       });
-
+      console.log(response);
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.error || "Failed to shorten URL");
